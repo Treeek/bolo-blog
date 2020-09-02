@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comunidade de adoradores de bolo</title>
+<style>
+    @media (prefers-color-scheme: dark) {
+        body {
+            color: #fff;
+            background: #000
+        }
+
+        a:link {
+            color: #9cf
+        }
+
+        a:hover,
+        a:visited:hover {
+            color: #cef
+        }
+
+        a:visited {
+            color: #c9f
+        }
+    }
+
+    body {
+        margin: 1em auto;
+        max-width: 40em;
+        padding: 0 .62em;
+        font: 1.2em/1.62 sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2;
+    }
+
+    @media print {
+        body {
+            max-width: none
+        }
+    }
+</style>
+<body>
+    <article>
+        <marquee>
+            <header>
+                <h1> Comunidade de adoradores de bolo</h1>
+                <aside>Uma coleção de bolos feito por entusiastas de bolo.</aside>
+            </header>
+        </marquee>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="sobrenome">Sobrenome:</label><br>
+            <input type="text" id="sobrenome" name="sobrenome"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="estado">Estado:</label> <br>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select> <br>
+            <label for="radio">Sexo:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Femino</label><br>
+            <label for="telefone">telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(11) 1111-1111"><br>
+            <label for="imagem">Url da imagem:</label><br>
+            <input type="url" id="imagem" name="imagem"><br>
+            <label for="receita">Receita:</label><br>
+            <textarea name="receita" id="receita" cols="30" rows="10"></textarea> <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </article>
+    <footer>
+        Adoramos bolo, e você!
+    </footer>
+</body>
